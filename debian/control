@@ -1,15 +1,21 @@
-Source: template-repository
-Section: unknown
+Source: fonts-atarismall
+Section: fonts
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Gürkan Myczko <gurkan@phys.ethz.ch>
+Build-Depends: debhelper (>= 11), fontforge-nox
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-atarismall.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-atarismall
+Standards-Version: 4.5.0
+Homepage: http://www.aiei.ch/atari/
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: fonts-atarismall
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Very small 4 x 8 font
+ This is named atari small because it was designed for a terminal emulator
+ written for an Atari 800. It only had a 320 pixel wide display, but an 80
+ column terminal was wanted, hence there is this font. This is somewhat
+ cleaned up from the original version. It has only a one pixel descent to
+ maximize pixels available to the main body of each character.
